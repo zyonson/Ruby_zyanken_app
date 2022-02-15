@@ -43,8 +43,11 @@ def battle
     
     puts "あなた:#{result2[hoi]}"
     puts "相手:#{result2[hoi2]}"
+    puts "-------------------------"
     if hoi == hoi2
       puts "あなたの勝ちです"
+    else
+      return true
     end
     
     when "lost"
@@ -58,8 +61,11 @@ def battle
     
     puts "あなた:#{result2[hoi]}"
     puts "相手:#{result2[hoi2]}"
+    puts "-------------------------"
     if hoi == hoi2
       puts "あなたの負けです"
+    else
+      return true
     end
   end
 end
